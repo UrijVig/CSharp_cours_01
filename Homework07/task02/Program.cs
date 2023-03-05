@@ -32,13 +32,13 @@ int ElementSearch(int[,] matr)
     while (true)
     {
         line = ReadInt("Введите номер строки: ");
-        if (line < matr.GetLength(0) + 1) break;
+        if (line < matr.GetLength(0) + 1 && line > 0) break;
         else System.Console.WriteLine("Введённое число не соответсвует условиям поиска, повторите попытку!");
     }
     while (true)
     {
         pillar = ReadInt("Введите номер столбца: ");
-        if (pillar < matr.GetLength(1) + 1) break;
+        if (pillar < matr.GetLength(1) + 1 && pillar > 0) break;
         else System.Console.WriteLine("Введённое число не соответсвует условиям поиска, повторите попытку!");
     }
 
