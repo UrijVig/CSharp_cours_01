@@ -69,7 +69,7 @@ static void PrintMatrix(int[,] matr)
     {
         for (int j = 0; j < matr.GetLength(1); j++)
         {
-            System.Console.Write(matr[i, j] + "\t");
+            System.Console.Write("{0,4}",matr[i, j]);
         }
         System.Console.WriteLine();
     }
